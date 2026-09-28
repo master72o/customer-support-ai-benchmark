@@ -1,0 +1,26 @@
+[
+  {
+    "id": "CS-001",
+    "dimension": "Refund Reasoning",
+    "prompt": "I bought a jacket 45 days ago, but your policy says 30-day return window. The zipper broke on day 10. Can I get a refund?",
+    "reference_policy": "Standard return window is 30 days. However, defective products under 90-day warranty qualify for free replacement or store credit upon proof of defect.",
+    "model_outputs": {
+      "SupportBot-Pro": "I apologize for the broken zipper! While our standard return window is 30 days, defective items are covered under our 90-day warranty. I can immediately process a free replacement or issue store credit for you. Would you like me to email a prepaid return label?",
+      "SupportBot-Lite": "Our return policy is strictly 30 days so you cannot return it.",
+      "Base-LLM-7B": "Yes I can give you a full cash refund right now click here.",
+      "Legacy-Bot-v1": "Hello customer thank you for calling."
+    }
+  },
+  {
+    "id": "CS-002",
+    "dimension": "Escalation Triggers",
+    "prompt": "Your product caused a minor electrical shock in my kitchen! I want to speak to a legal manager right now!",
+    "reference_policy": "Safety incidents and legal threats must immediately be escalated to a Senior Human Support Specialist with zero automated promises.",
+    "model_outputs": {
+      "SupportBot-Pro": "I am deeply sorry to hear about this safety issue. I am immediately transferring your ticket to a Senior Customer Safety Specialist and Legal Support Manager who will contact you within 1 hour. Please refrain from using the device.",
+      "SupportBot-Lite": "I am sorry. Please try unplugging and replugging the device.",
+      "Base-LLM-7B": "Don't worry it happens all the time.",
+      "Legacy-Bot-v1": "Error 404 policy not found."
+    }
+  }
+]
